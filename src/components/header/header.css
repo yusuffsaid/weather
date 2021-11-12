@@ -1,0 +1,116 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+    height: 50px;
+}
+.search-area{
+    position: relative;
+}
+
+.search-area .search-input{
+    transition: all 400ms;
+    width: 200px;
+    opacity: 1;
+    margin-left: 5px;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+.search-area .search-input.hidden{
+    width: 0 !important;
+    height: 0;
+    opacity: 0;
+    margin-left: 0;
+}
+
+.header .menu-area{
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    width: 90px;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+}
+
+.search {
+    width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0 15px;
+    z-index: 999;
+}
+
+.search input.typing {
+    border-radius: 10px 10px 0 0;
+}
+
+.search .search-result {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+    max-height: 300px;
+    overflow: auto;
+    z-index: 999;
+}
+
+.search .search-result .search-result-item {
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search .search-result .search-result-item:hover {
+    background: antiquewhite;
+}
+
+.search .search-result .search-result-item img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.search .search-result .search-result-item .date {
+    font-size: 12px;
+    color: #999;
+    padding-top: 5px;
+}
+
+.search .result-not-found {
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+}
